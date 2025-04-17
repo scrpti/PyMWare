@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+PyMWare
+PyMWare es una plataforma modular que permite integrar inteligencia artificial de forma eficiente en flujos de trabajo personalizados. Aprovechamos la potencia de modelos avanzados como GPT para crear asistentes inteligentes que entienden el contexto, automatizan tareas y se adaptan a las necesidades específicas de cada equipo o empresa.
 
-## Getting Started
+🚀 Visión
+Hacer que cualquier equipo pueda tener su propio copiloto inteligente sin necesidad de conocimientos avanzados en IA o desarrollo.
 
-First, run the development server:
+🧠 Características principales
+🔌 Integraciones a medida: conectamos con APIs, bases de datos y servicios como Notion, WhatsApp, o CRMs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧩 Componentes reutilizables: sistema modular para construir asistentes adaptados a flujos concretos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧠 Memoria contextual inteligente: los asistentes entienden el contexto a lo largo del tiempo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📡 Interfaces multicanal: web, chat, voz y más.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⚙️ Tecnologías
+Python / FastAPI / LangChain
 
-## Learn More
+OpenAI GPT Models
 
-To learn more about Next.js, take a look at the following resources:
+Docker / Zsh / Linux
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Frontends en Angular, Tailwind, y Next.js (según módulo)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Integración con servicios externos como Cloudinary, MongoDB, Vercel, Notion API, WhatsApp API, etc.
 
-## Deploy on Vercel
+📦 Estructura del proyecto
+bash
+Copy
+Edit
+pymware/
+├── core/              # Lógica principal y funciones comunes
+├── agents/            # Agentes personalizados por cliente o flujo
+├── api/               # Endpoints y servicios web
+├── integrations/      # Módulos externos (Notion, WhatsApp, etc.)
+├── docs/              # Documentación técnica
+├── tests/             # Pruebas unitarias y de integración
+└── README.md
+🚀 Cómo empezar
+bash
+Copy
+Edit
+git clone https://github.com/tu-usuario/pymware.git
+cd pymware
+pip install -r requirements.txt
+uvicorn api.main:app --reload
+Asegúrate de tener las variables de entorno necesarias en un archivo .env.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🤝 Contribuciones
+¿Te gustaría contribuir? ¡Nos encantaría contar contigo!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# alergenos-demo
-# PyMWare
+Haz un fork del repositorio
+
+Crea una nueva rama (git checkout -b feature-nueva)
+
+Realiza tus cambios y haz commit (git commit -am 'Añadir nueva feature')
+
+Haz push a la rama (git push origin feature-nueva)
+
+Abre un Pull Request
+
+📄 Licencia
+MIT License — libre para uso personal y comercial. Consulta el archivo LICENSE para más detalles.
+
+✉️ Contacto
+Si quieres colaborar, tienes preguntas o simplemente te interesa lo que estamos haciendo, puedes escribirnos a contacto@pymware.ai.
+
