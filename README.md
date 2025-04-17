@@ -21,7 +21,7 @@ OpenAI GPT Models
 Docker / Zsh / Linux
 
 Frontends en Angular, Tailwind, y Next.js (según módulo)
-
+ 
 Integración con servicios externos como Cloudinary, MongoDB, Vercel, Notion API, WhatsApp API, etc.
 
 📦 Estructura del proyecto
