@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900">
+    <main className="font-sans bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -32,6 +32,7 @@ export default function Home() {
             <a onClick={() => scrollTo("about")} className="cursor-pointer hover:text-indigo-600">Qué es</a>
             <a onClick={() => scrollTo("features")} className="cursor-pointer hover:text-indigo-600">Características</a>
             <a onClick={() => scrollTo("how")} className="cursor-pointer hover:text-indigo-600">Cómo funciona</a>
+            <a onClick={() => scrollTo("products")} className="cursor-pointer hover:text-indigo-600">Productos</a>
             <a onClick={() => scrollTo("projects")} className="cursor-pointer hover:text-indigo-600">Proyectos</a>
             <a onClick={() => scrollTo("cta")} className="cursor-pointer hover:text-indigo-600">Empieza</a>
           </div>
@@ -54,12 +55,45 @@ export default function Home() {
           automatizaciones y herramientas como <span className="font-semibold">Notion</span> y <span className="font-semibold">WhatsApp</span> de forma fácil y poderosa.
         </p>
         <a
-          onClick={() => scrollTo("cta")}
-          className="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-indigo-700 transition duration-300 cursor-pointer"
+          href="https://wa.me/34644451595?text=Hola%20PyMWare,%20quiero%20probar%20la%20plataforma!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-indigo-700 transition duration-300"
         >
           🚀 Probar PyMWare
         </a>
       </motion.section>
+
+      {/* Products Section */}
+      <section id="products" className="py-24 px-6 bg-gray-50 text-center">
+        <h2 className="text-4xl font-bold mb-12">Productos que ofrecemos</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="bg-white p-6 rounded-xl shadow text-left">
+            <h3 className="text-2xl font-semibold mb-2">🤖 Bot de WhatsApp</h3>
+            <p className="text-gray-600 mb-4">Automatizá respuestas, agendá citas y tomá pedidos 24/7. Ideal para negocios que quieren brindar atención inmediata.</p>
+            <a
+              href="https://wa.me/34644451595?text=Hola%20PyMWare,%20quiero%20obtener%20mas%20informacion%20sobre%20el%20bot%20de%20WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 font-medium hover:underline"
+            >
+              Consultar por este servicio →
+            </a>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow text-left">
+            <h3 className="text-2xl font-semibold mb-2">📲 Gestión de WhatsApp Business</h3>
+            <p className="text-gray-600 mb-4">Creamos y configuramos tu cuenta de WhatsApp Business, incluyendo catálogo, mensaje automático, perfil y más.</p>
+            <a
+              href="https://wa.me/34644451595?text=Hola%20PyMWare,%20quiero%20que%20gestionen%20mi%20cuenta%20de%20WhatsApp%20Business"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 font-medium hover:underline"
+            >
+              Quiero que gestionen mi cuenta →
+            </a>
+          </div>
+        </div>
+      </section>
       
       {/* About Section */}
       <section id="about" className="py-24 px-6 bg-white text-center">
