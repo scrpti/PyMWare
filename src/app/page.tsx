@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,7 +46,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="min-h-screen flex flex-col items-center justify-center py-32 px-6 text-center"
+        className="min-h-screen flex flex-col items-center justify-center py-32 px-6 text-center relative"
       >
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
           Automatiza. <span className="text-indigo-600">Conecta.</span> Escala.
@@ -55,13 +56,23 @@ export default function Home() {
           automatizaciones y herramientas como <span className="font-semibold">Notion</span> y <span className="font-semibold">WhatsApp</span> de forma fácil y poderosa.
         </p>
         <a
-          href="https://wa.me/34644451595?text=Hola%20PyMWare,%20quiero%20probar%20la%20plataforma!"
+          href="https://wa.me/549XXXXXXXXXX"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-indigo-700 transition duration-300"
         >
           🚀 Probar PyMWare
         </a>
+
+        <motion.div
+          className="absolute bottom-8 animate-bounce cursor-pointer"
+          onClick={() => scrollTo("about")}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
+        >
+          <ChevronDown size={64} className="text-indigo-600" />
+        </motion.div>
       </motion.section>
 
       {/* Products Section */}
